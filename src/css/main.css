@@ -25,7 +25,8 @@
   height: 210px;
   margin: 375px 260px;
   background-color: #fff;
-  border: 1px solid black;
+  background-color: #fff;
+  z-index: 999;
 }
 
 .container .alert .alert-content {
@@ -62,6 +63,21 @@
   top: 40px;
   right: 40px;
   bottom: 146px;
+  cursor: pointer;
+}
+
+.container .alert .reset-button {
+  position: absolute;
+  bottom: 5px;
+  left: 100px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-style: none;
+  color: white;
+  background-color: red;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .container .main {
