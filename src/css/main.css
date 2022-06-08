@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.alert-active {
+  opacity: 50%;
+}
+
+.container {
+  width: 1440px;
+  height: 960px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container .alert {
+  position: absolute;
+  width: 920px;
+  height: 210px;
+  margin: 375px 260px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.container .alert .alert-content {
+  width: 380px;
+  height: 98px;
+  margin: 56px 445px 56px 96px;
+}
+
+.container .alert .alert-content .alert-title {
+  width: 100%;
+  height: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #121212;
+  margin-bottom: 24px;
+}
+
+.container .alert .alert-content .alert-description {
+  width: 100%;
+  height: 24px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.container .alert .close-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 40px;
+  right: 40px;
+  bottom: 146px;
+}
+
+.container .main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main .main-image {
+  width: 505px;
+  height: 330px;
+  margin-top: 96px;
+  margin-left: 230px;
+}
+
+.container .main .text-wrapper {
+  width: 380px;
+  height: 96px;
+  margin-top: 136px;
+  margin-left: 95px;
+}
+
+.container .main .text-wrapper .title {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #121212;
+}
+
+.container .main .text-wrapper .description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.container .main .text-wrapper .main-button {
+  width: 128px;
+  height: 48px;
+  padding: 16px 40px;
+  margin-top: 32px;
+  background: #E4C1AE;
+  border-style: none;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
