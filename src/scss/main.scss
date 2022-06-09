@@ -17,6 +17,9 @@ $font: "Roboto", sans-serif;
 }
 
 .container{
+    max-width: 1440px;
+    height: 960px;
+    font-family: $font;
    & .alert{
        position: absolute;
         width: 920px;
@@ -25,10 +28,36 @@ $font: "Roboto", sans-serif;
         background-color: #fff;
         background-color: #fff;
         z-index: 999;
+        @media(max-width:1220px){
+            margin: 325px 20px;
+        }
+        @media(max-width:900px){
+            margin-top: 250px;
+            width: 700px;
+        }
+        @media(max-width:700px){
+            margin-top: 250px;
+            width: 500px;
+        }
+        @media(max-width:500px){
+            margin-top: 250px;
+            width: 350px;
+            border: 2px solid black;
+        }
+        @media(max-width:500px){
+            margin: 200px auto;
+            width: 80%
+        }
+        
         & .alert-content{
             width: 380px;
             height: 98px;
             margin: 56px 445px 56px 96px;
+            @media(max-width:500px){
+                margin: 30px 20px;
+                height: auto;
+               
+            }
             & .alert-title{
                 width: 100%;
                 height: 50px;
@@ -38,15 +67,28 @@ $font: "Roboto", sans-serif;
                 line-height: 120%;
                 color:$dark;
                 margin-bottom: 24px;
+                @media(max-width:700px){
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                @media(max-width:400px){
+                    height: 25px;
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
             }
             & .alert-description{
                 width: 100%;
-                height: 24px;
+                height: 20px;
                 font-style: normal;
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 150%;
                 color: $dark;
+                @media(max-width:500px){
+                   font-size: 12px;
+                   overflow-wrap:break-word;
+                }
             }
         }
         & .close-btn{
@@ -57,6 +99,10 @@ $font: "Roboto", sans-serif;
            right: 40px;
            bottom: 146px;
            cursor: pointer;
+           @media(max-width:500px){
+            top: 10px;
+            right: 10px;
+        }
         }
         & .reset-button{
             position: absolute;
@@ -74,25 +120,79 @@ $font: "Roboto", sans-serif;
         }
         
     }
-    width: 1440px;
-    height: 960px;
-    font-family: $font;
+  
     & .main{
         width: 100%;
         height: 100%;
        display: flex;
+       @media(max-width:913px){
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+
+    }
+       
         
         & .main-image{
             width: 505px;
             height: 330px;
             margin-top: 96px;
             margin-left: 230px;
+            @media(max-width:1220px){
+                margin-left: 150px;
+            }
+            @media(max-width:1083px){
+                width: 450px;
+            height: 260px;
+            }
+            @media(max-width:913px){
+               margin: 50px auto;
+            
+            }
+            @media(max-width:540px){
+                width: 350px;
+                height: 180px;
+                margin: 40px 20px;
+             
+             }
+             @media(max-width:400px){
+                width: 300px;
+                height: 150px;
+                margin: 10px 10px;
+             
+             }
+             @media(max-width:320px){
+                width: 200px;
+                height: 100px;
+                margin: 10px 10px;
+             
+             }
+           
         }
         & .text-wrapper{
             width: 380px;
             height: 96px;
             margin-top: 136px;
             margin-left: 95px;
+            @media(max-width:1220px){
+                margin-left: 40px;
+            }
+            @media(max-width:1083px){
+                margin-top: 98px;
+                width: 250px;
+            }
+            @media(max-width:913px){
+                width: 80%;
+                text-align: center;
+                padding: 10px 30px;
+                margin: 10px auto;
+             
+             }
+             @media(max-width:400px){
+                height: 150px;
+                margin: 0 10px;
+             
+             }
            & .title{
                width: 100%;
                height: 50px;
@@ -102,6 +202,18 @@ $font: "Roboto", sans-serif;
                 font-size: 42px;
                 line-height: 120%;
                 color: $dark;
+                @media(max-width:1083px){
+                   font-size: 33px;
+                }
+                @media(max-width:913px){
+                    margin: 10px 0;
+                 
+                 }
+                 @media(max-width:400px){
+                     height: 20px;
+                   font-size: 20px;
+                 
+                 }
            }
            & .description{
             font-style: normal;
@@ -109,6 +221,13 @@ $font: "Roboto", sans-serif;
             font-size: 16px;
             line-height: 150%;
             color: $dark;
+            @media(max-width:1083px){
+                font-size: 14px;
+             }
+             @media(max-width:400px){
+                font-size: 10px;
+              
+              }
            }
            & .main-button{
             width: 128px;

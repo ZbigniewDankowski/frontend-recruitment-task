@@ -14,7 +14,7 @@
 }
 
 .container {
-  width: 1440px;
+  max-width: 1440px;
   height: 960px;
   font-family: "Roboto", sans-serif;
 }
@@ -29,10 +29,52 @@
   z-index: 999;
 }
 
+@media (max-width: 1220px) {
+  .container .alert {
+    margin: 325px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container .alert {
+    margin-top: 250px;
+    width: 700px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container .alert {
+    margin-top: 250px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .alert {
+    margin-top: 250px;
+    width: 350px;
+    border: 2px solid black;
+  }
+}
+
+@media (max-width: 500px) {
+  .container .alert {
+    margin: 200px auto;
+    width: 80%;
+  }
+}
+
 .container .alert .alert-content {
   width: 380px;
   height: 98px;
   margin: 56px 445px 56px 96px;
+}
+
+@media (max-width: 500px) {
+  .container .alert .alert-content {
+    margin: 30px 20px;
+    height: auto;
+  }
 }
 
 .container .alert .alert-content .alert-title {
@@ -46,14 +88,36 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 700px) {
+  .container .alert .alert-content .alert-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .alert .alert-content .alert-title {
+    height: 25px;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+
 .container .alert .alert-content .alert-description {
   width: 100%;
-  height: 24px;
+  height: 20px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   color: #121212;
+}
+
+@media (max-width: 500px) {
+  .container .alert .alert-content .alert-description {
+    font-size: 12px;
+    overflow-wrap: break-word;
+  }
 }
 
 .container .alert .close-btn {
@@ -64,6 +128,13 @@
   right: 40px;
   bottom: 146px;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container .alert .close-btn {
+    top: 10px;
+    right: 10px;
+  }
 }
 
 .container .alert .reset-button {
@@ -88,6 +159,21 @@
   display: flex;
 }
 
+@media (max-width: 913px) {
+  .container .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .container .main .main-image {
   width: 505px;
   height: 330px;
@@ -95,11 +181,83 @@
   margin-left: 230px;
 }
 
+@media (max-width: 1220px) {
+  .container .main .main-image {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .container .main .main-image {
+    width: 450px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 913px) {
+  .container .main .main-image {
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .container .main .main-image {
+    width: 350px;
+    height: 180px;
+    margin: 40px 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .main .main-image {
+    width: 300px;
+    height: 150px;
+    margin: 10px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container .main .main-image {
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px;
+  }
+}
+
 .container .main .text-wrapper {
   width: 380px;
   height: 96px;
   margin-top: 136px;
   margin-left: 95px;
+}
+
+@media (max-width: 1220px) {
+  .container .main .text-wrapper {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .container .main .text-wrapper {
+    margin-top: 98px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 913px) {
+  .container .main .text-wrapper {
+    width: 80%;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .main .text-wrapper {
+    height: 150px;
+    margin: 0 10px;
+  }
 }
 
 .container .main .text-wrapper .title {
@@ -113,12 +271,43 @@
   color: #121212;
 }
 
+@media (max-width: 1083px) {
+  .container .main .text-wrapper .title {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 913px) {
+  .container .main .text-wrapper .title {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .main .text-wrapper .title {
+    height: 20px;
+    font-size: 20px;
+  }
+}
+
 .container .main .text-wrapper .description {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   color: #121212;
+}
+
+@media (max-width: 1083px) {
+  .container .main .text-wrapper .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container .main .text-wrapper .description {
+    font-size: 10px;
+  }
 }
 
 .container .main .text-wrapper .main-button {
